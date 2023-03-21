@@ -1,13 +1,28 @@
 ﻿namespace Punicher.Blog.Domain.Entity
 {
+   /// <summary>
+   /// Post in the blog.
+   /// </summary>
 	public class Post : BlogEntity
 	{
-        public Guid Id { get; set; }
+      /// <summary>
+      /// Post id.
+      /// </summary>
+      public Guid Id { get; set; }
 
-        public string Title { get; set; }
+      /// <summary>
+      /// Title of the post.
+      /// </summary>
+      public string? Title { get; set; }
 
-        public string Content { get; set; }        
+      /// <summary>
+      /// Content of the post.
+      /// </summary>
+      public string? Content { get; set; }        
 
-        public Guid AuthorId { get; set; }
+      /// <summary>
+      /// Author's id.
+      /// </summary>
+      public Guid AuthorId { get; set; }
     }
 }
